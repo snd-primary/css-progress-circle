@@ -24,7 +24,7 @@
 	height: 300px;
 	border-radius: 50%;
 	background-image: conic-gradient(
-		lch(86.29% 94.85 119.35) 0deg,
+		#aaec0e 0deg,
 		#9127e7 var(--angle),
 		#000000 calc(var(--angle) + 1deg)
 	);
