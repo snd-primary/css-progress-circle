@@ -33,7 +33,7 @@ const App: React.FC = () => {
 			// Web Animation API を使用してアニメーションを作成
 			const animation = circle.animate(
 				// キーフレーム: CSSカスタムプロパティ '--angle' を 100% から 0% に変化させる
-				[{ "--angle": "100%" }, { "--angle": "0%" }],
+				[{ "--angle": "360deg" }, { "--angle": "0deg" }],
 
 				// オプション: 実行時間、イージング関数、アニメーション終了後の状態
 				{

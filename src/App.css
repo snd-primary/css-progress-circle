@@ -12,10 +12,11 @@
 	margin-bottom: 2rem;
 }
 
+/* <angle>型のほか、<parcentage>型でも同様の挙動が実現できる */
 @property --angle {
-	syntax: "<percentage>";
+	syntax: "<angle>";
 	inherits: false;
-	initial-value: 100%;
+	initial-value: 360deg;
 }
 
 .progressCircle {
@@ -23,9 +24,9 @@
 	height: 300px;
 	border-radius: 50%;
 	background-image: conic-gradient(
-		#aaec0e 0%,
+		lch(86.29% 94.85 119.35) 0deg,
 		#9127e7 var(--angle),
-		#000000 var(--angle) 100%
+		#000000 calc(var(--angle) + 1deg)
 	);
 }
 
